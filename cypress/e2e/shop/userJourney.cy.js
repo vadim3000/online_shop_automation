@@ -48,10 +48,7 @@ describe('User journey on the web site', ()=>{
         // cy.get("a").contains(" Smartphone Apple iPhone ").trigger("mouseover",{force:true})
         // cy.get("a[data-id='40188']").contains(" Smartphone Apple iPhone ").click({force:true})
 
-        // cy.get("span").contains(" Apple ").click({force:true})
-        // cy.get("img[alt='Apple']").trigger("mouseover")
-        // cy.get("a[data-id='40184']").eq(1).trigger("mouseover", {force:true})
-        //cy.get("a").contains(" Smartphone Apple iPhone ").trigger("mouseover")
+
     })
 
 })
