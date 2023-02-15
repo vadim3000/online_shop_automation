@@ -16,10 +16,10 @@ phases:
       - export COMMIT_INFO_SHA="$(git log -1 --pretty=%H)"
       - export COMMIT_INFO_REMOTE="$(git config --get remote.origin.url)"
       - npm ci
-#  pre_build:
-#    commands:
-#      - npm run cy:verify
-#      - npm run cy:info
+  pre_build:
+    commands:
+      - npm run cy:verify
+      - npm run cy:info
   build:
     commands:
       - npm run start:ci &
