@@ -1,7 +1,9 @@
 /// <reference types="cypress" />
 
+let url:string = 'https://maximum.md/ro/Apple/'
 
 describe('User journey on the web site', ()=>{
+
 
     beforeEach('open homepage', ()=> {
         cy.openHomePage()
@@ -69,6 +71,8 @@ describe('User journey on the web site', ()=>{
 
         // cy.get("a").contains(" Smartphone Apple iPhone ").trigger("mouseover",{force:true})
         // cy.get("a[data-id='40188']").contains(" Smartphone Apple iPhone ").click({force:true})
+
+        cy.url().should('eq', url)
     })
 
 
