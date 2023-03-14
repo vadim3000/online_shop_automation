@@ -48,7 +48,7 @@ describe('User journey on the web site', ()=>{
             .click()
     })
 
-    it.only("The user search for the product in the category nav bar", ()=>{
+    it("The user search for the product in the category nav bar", ()=>{
         cy.get("span").contains(" Toate produsele ").trigger("mouseover")
         cy.get("span").contains(" Apple ")
             .click({force:true})
