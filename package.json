@@ -171,7 +171,8 @@
     "yauzl": "^2.10.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx cypress run --record --key aac38b37-f66b-4387-9bfd-35e7c6047299"
   },
   "author": "vadim",
   "license": "ISC"
