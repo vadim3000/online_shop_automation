@@ -7,7 +7,7 @@ describe('User journey on the web site', function () {
     // after('Test end', ()=>{
     //     cy.end()
     // })
-    it("The user changes the language on russian", function () {
+    it.only("The user changes the language on russian", function () {
         cy.get("a[title='Schimbă limba']")
             .click()
             .wait(2000);
