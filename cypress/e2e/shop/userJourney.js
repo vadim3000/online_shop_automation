@@ -7,7 +7,7 @@ describe('User journey on the web site', function () {
     // after('Test end', ()=>{
     //     cy.end()
     // })
-    it.only("The user changes the language on russian", function () {
+    it("The user changes the language on russian", function () {
         cy.get("a[title='Schimbă limba']")
             .click()
             .wait(2000);
@@ -16,7 +16,7 @@ describe('User journey on the web site', function () {
         cy.get("img[title='Pagina principală']")
             .click();
     });
-    it("The user clicks on the next arrow on the carousel", function () {
+    it.only("The user clicks on the next arrow on the carousel", function () {
         cy.get("button[title='Next']")
             .click()
             .wait(300)

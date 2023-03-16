@@ -13,7 +13,7 @@ describe('User journey on the web site', ()=>{
     //     cy.end()
     // })
 
-    it.only("The user changes the language on russian", ()=>{
+    it("The user changes the language on russian", ()=>{
         cy.get("a[title='Schimbă limba']")
             .click()
             .wait(2000)
@@ -24,7 +24,7 @@ describe('User journey on the web site', ()=>{
             .click()
     })
 
-    it("The user clicks on the next arrow on the carousel", ()=>{
+    it.only("The user clicks on the next arrow on the carousel", ()=>{
         cy.get("button[title='Next']")
             .click()
             .wait(300)
