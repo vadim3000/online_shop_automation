@@ -1,3 +1,4 @@
+
 /// <reference types="cypress" />
 
 let url:string = 'https://maximum.md/ro/Apple/'
