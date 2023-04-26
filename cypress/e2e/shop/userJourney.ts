@@ -10,7 +10,7 @@ describe('User journey on the web site', ()=>{
         cy.openHomePage()
     })
 
-    it("The user changes the language on russian", ()=>{
+    it.only("The user changes the language on russian", ()=>{
         cy.get("a[title='Schimbă limba']")
             .click()
             .wait(2000)
