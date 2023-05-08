@@ -23,7 +23,8 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
-Cypress.Commands.add('openHomePage', function () {
-    cy.visit('https://maximum.md/ro');
-    cy.wait(500);
-});
+
+Cypress.Commands.add('openHomePage', () =>{
+    cy.visit('https://maximum.md/ro')
+    cy.wait(500)
+})
