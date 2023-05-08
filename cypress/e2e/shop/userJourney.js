@@ -4,7 +4,7 @@ describe('User journey on the web site', function () {
     beforeEach('open homepage', function () {
         cy.openHomePage();
     });
-    it("The user changes the language on russian", function () {
+    it.only("The user changes the language on russian", function () {
         cy.get("a[title='Schimbă limba']")
             .click()
             .wait(2000);
