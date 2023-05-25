@@ -18,7 +18,7 @@ phases:
       - export COMMIT_INFO_SHA="$(git log -1 --pretty=%H)"
       - export COMMIT_INFO_REMOTE="$(git config --get remote.origin.url)"
       - npm ci
-      - yum install -y xorg-x11-server-Xvfb gtk2-devel gtk3-devel libnotify-devel GConf2 nss libXScrnSaver alsa-lib
+      - npm yum install -y xorg-x11-server-Xvfb gtk2-devel gtk3-devel libnotify-devel GConf2 nss libXScrnSaver alsa-lib
   pre_build:
     commands:
       - npm run cy:verify
