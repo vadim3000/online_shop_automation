@@ -1,0 +1,10 @@
+#--------------------------------------------------------------
+# Simple AWS CodeBuild Config File
+#--------------------------------------------------------------
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "start of Build Phase"
+      - echo "Do something to build or test your code!!!"
