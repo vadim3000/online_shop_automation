@@ -28,8 +28,8 @@ describe('User journey on the web site', ()=>{
             .click()
             .wait(300)
             .click()
-            .wait(300)
-            .click()
+            // .wait(300)
+            // .click()
 
     })
 
@@ -48,8 +48,6 @@ describe('User journey on the web site', ()=>{
 
         cy.url().should('eq', url)
     })
-
-
 
 
 })

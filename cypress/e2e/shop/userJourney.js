@@ -19,9 +19,9 @@ describe('User journey on the web site', function () {
             .wait(300)
             .click()
             .wait(300)
-            .click()
-            .wait(300)
             .click();
+        // .wait(300)
+        // .click()
     });
     it("The user search a product in the search bar", function () {
         cy.get("input[title='Căutare']")
