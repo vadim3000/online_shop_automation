@@ -1,5 +1,4 @@
 const { defineConfig } = require("cypress");
-// const { cloudPlugin } = require("cypress-cloud/plugin");
 
 module.exports = defineConfig({
   projectId: 'qcbygc',
