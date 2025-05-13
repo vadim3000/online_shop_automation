@@ -1,4 +1,6 @@
-## buildspec.yml
+#--------------------------------------------------------------
+# Simple AWS CodeBuild Config File
+#--------------------------------------------------------------
 version: 0.2
 
 phases:
@@ -18,9 +20,9 @@ phases:
       - npm ci
   pre_build:
     commands:
-#      - npm run cy:verify
-#      - npm run cy:info
+      - npm run cy:verify
+      - npm run cy:info
   build:
     commands:
-#      - npm run start:ci &
-      - npx cypress run
+      - npm run start:ci &
+      - npx cypress run --record
