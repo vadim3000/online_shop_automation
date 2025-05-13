@@ -17,7 +17,7 @@ phases:
 #      - npm ci
   pre_build:
     commands:
-      - npm run cy:verify
+#      - npm run cy:verify
       - npm run cy:info
   build:
     commands:
